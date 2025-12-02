@@ -8,7 +8,7 @@ header{
 }
 header img
 {
- width:200px;   
+ width: 150px;  
 }
 .navbar{
     display: flex;
@@ -43,4 +43,232 @@ button:hover{
     padding: 9px;
     color: white;
     background-color: rgb(105, 98, 98);
+}
+s
+section img{
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+footer a{
+    display: flex;
+    flex-direction: row;
+    border: 1px; color: rgb(0, 0, 0);
+    align-items: center;
+text-align: center;
+}
+section div{
+margin: 10px;
+border-radius: 1px;
+align-items: center;
+}
+
+footer {
+  background: #222;
+  padding: 40px 20px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+}
+
+footer .aboutus {
+  max-width: 300px;
+}
+
+footer .aboutus h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+footer .aboutus a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+  margin: 6px 0;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+footer .aboutus a:hover {
+  color: #fff;
+  padding-left: 5px;
+}
+section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 40px 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LEFT SIDE (Hero Text) */
+section .left {
+  flex: 1 1 350px;
+  max-width: 450px;
+}
+
+section .left h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+section .left p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #444;
+  margin-bottom: 20px;
+}
+
+section .left button {
+  background: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+}
+
+section .left button a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* PRODUCT CARDS */
+section > div {
+  width: 220px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+section > div:hover {
+  transform: translateY(-5px);
+}
+
+section > div img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+section > div h2 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+section > div button {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+section > div button:hover {
+  background: #333;
+}header {
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* LOGO */
+header .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+header .logo p {
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header .logo img {
+  width: 40px;
+  height: 40px;
+}
+
+/* NAVBAR */
+header .navbar {
+  display: flex;
+  gap: 25px;
+}
+
+header .navbar a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+  transition: 0.3s;
+}
+
+header .navbar a:hover {
+  color: #555;
+}
+
+/* BUTTONS */
+header .buttons {
+  display: flex;
+  gap: 15px;
+}
+
+header .buttons button {
+  padding: 8px 16px;
+  border: 1px solid #111;
+  background: transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+header .buttons button:hover {
+  background: #111;
+}
+
+header .buttons button a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #111;
+  font-weight: 600;
+}
+
+header .buttons button:hover a {
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
 }
